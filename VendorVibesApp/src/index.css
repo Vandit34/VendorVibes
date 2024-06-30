@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+.styleForDiv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../src/assets/LandingImg1.png"); /* Adjust the path as needed */
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Ensures the background is behind the content */
+}
+
+.animate-spin {
+  animation: spin 25s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add this to your global CSS file */
+@media (min-width: 600px) and (max-width: 767px) {
+  .custom-top {
+    /* bottom: 9rem; */
+    top: -10rem;
+  }
+}
+
+/* Animation of the carousel */
+
+.carousel {
+  /* 👇🏻 use linear */
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0rem);
+  }
+  100% {
+    transform: translateX(-127rem);
+  }
+}
+
+/* Slick Slider */
+
+.slick-slide > div {
+  margin-inline: 1.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 2.2rem;
+}
+.slick-prev::before,
+.slick-next::before {
+  color: orange;
+  font-size: 2rem;
+}
+
+.slider-container
+{
+display: flex;
+flex-direction: column;
+}
+
+.slider-container > button
+{
+  width: 6.2rem;
+
+}
+
+/* Move up */
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(20rem);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(-20rem);
+    animation-timing-function: ease-in-out;
+  }
+}
+.animate-up {
+  animation: moveUp 1.5s infinite;
+}
+
+/* .stasfiedCustomers {
+  box-shadow: 0px 0px 59px 2px rgba(0, 0, 0, 0.75);
+} */
+
+.emailShadow {
+  box-shadow: 0px 0px 38px -2px rgba(0, 0, 0, 1);
+}
+
+.footSec1 {
+  padding-inline: 1rem;
+  margin-top: 1.5rem;
+}
+
+.foodCardShadow {
+  box-shadow: -1px 1px 59px 4px rgba(143, 143, 143, 1);
+}
