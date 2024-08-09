@@ -11,6 +11,7 @@ import BradingImg9 from '../assets/BrandingImg9.jpg'
 import BradingImg10 from '../assets/BrandingImg10.jpg'
 import BrandingImgC1 from '../assets/BrandingImgC1.png'
 import BrandingImgC2 from '../assets/BrandingImgC2.png'
+import img1 from "../assets/BrandingImgA1.svg"
 
 
 import Marquee from 'react-fast-marquee'
