@@ -12,11 +12,12 @@ import BradingImg10 from '../assets/BrandingImg10.jpg'
 import BrandingImgC1 from '../assets/BrandingImgC1.png'
 import BrandingImgC2 from '../assets/BrandingImgC2.png'
 
+
 import Marquee from 'react-fast-marquee'
 import Content from '../BrandingContent.js'
 
 const Branding = () => {
-  return (
+  return ( 
     <>
       {/* XXXXXXX  Section 1   XXXXXXX  */}
       <section className=' py-5 pb-8 pt-20 md:pt-5  bg-orange-100 relative'>
@@ -92,8 +93,8 @@ const Branding = () => {
           </div>
           {/* Text */}
           <div className='grid md:grid-cols-2  md:gap-4'>
-            {Content.map(data => (
-              <div className='flex flex-col items-center mt-7 px-5 py-4'>
+            {Content.map((data,key) => (
+              <div key={key} className='flex flex-col items-center mt-7 px-5 py-4'>
                 <img src={data.img} className='w-24' />
                 <div>
                   <h1 className=' text-[1.9rem] mt-2 font-caveat font-semibold'>

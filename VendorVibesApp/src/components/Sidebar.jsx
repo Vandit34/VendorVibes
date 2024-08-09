@@ -7,7 +7,7 @@ const Sidebar = props => {
     <>
       {props.sign && (
         <div
-          className='fixed inset-0 bg-black bg-opacity-50 z-1'
+          className='fixed inset-0 bg-black bg-opacity-50 z-20'
           onClick={() => props.signfun(false)}
         ></div>
       )}

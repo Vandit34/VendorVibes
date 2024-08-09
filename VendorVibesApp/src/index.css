@@ -16,7 +16,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("../src/assets/LandingImg1.png"); /* Adjust the path as needed */
+  background-image: url("../src/assets/LandingImg1.png"); 
   background-size: cover;
   background-position: center;
   z-index: -1; /* Ensures the background is behind the content */
