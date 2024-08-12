@@ -129,7 +129,7 @@ const Popular = () => {
               onClick={() => navigate('/foodDisplay')}
               className='bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-2xl text-[1.3rem] '
             >
-              Found All
+              Find All
             </button>
           </div>
         </div>
